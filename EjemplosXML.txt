@@ -1,0 +1,78 @@
+Insertar Profesor
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <addProfesor xmlns="http://service">
+        <cedula>113220852</cedula>
+       <area>Progra</area>
+       <nombre>Daniel Williams</nombre>
+       <titulo>Bachiller</titulo>
+       <correo>dwilliams@xyz.com</correo>
+       <telefono>6677-3456</telefono>
+     </addProfesor>
+   </soap:Body>
+</soap:Envelope>
+
+Consultar Profesor
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <findProfesor xmlns="http://service">
+	<profesorId>101110111</profesorId>
+     </findProfesor>
+   </soap:Body>
+</soap:Envelope>
+
+Actualizar Profesor
+
+Eliminar Profesor
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <deleteProfesor xmlns="http://service">
+       <profesorId>101110111</profesorId>
+     </deleteProfesor>
+   </soap:Body>
+</soap:Envelope>
+
+Listar Profesores
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <findAllProfesor xmlns="http://service/">
+       </findAllProfesor>
+   </soap:Body>
+</soap:Envelope>
+
+Insertar Grupo
+
+Consultar Grupo
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <findGrupo xmlns="http://service">
+       <grupoId>5</grupoId>
+     </findGrupo>
+   </soap:Body>
+</soap:Envelope> 
+
+Actualizar Grupo
+
+Eliminar Grupo
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <deleteGrupo xmlns="http://service">
+       <grupoId>5</grupoId>
+     </deleteGrupo>
+   </soap:Body>
+</soap:Envelope> 
+
+Listar Grupos
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+     <findAllGrupo xmlns="http://service/">
+       </findAllGrupo>
+   </soap:Body>
+</soap:Envelope>
